@@ -1,0 +1,11 @@
+@startuml
+user->Publisher:newPublisher
+user->Subscriber:new Subscriber
+user->Publisher:subscribe(Subscriber s)
+Publisher->Subscription: new Subscription
+Publisher->Subscriber:onSubscribe(Subscription)
+Subscriber->Subscription:request
+Subscription->Subscriber:onNext
+Subscriber->Consumer:onAccept
+Subscription->Subscriber:onComplete
+@enduml

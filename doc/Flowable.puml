@@ -1,0 +1,32 @@
+@startuml
+
+abstract class Flowable<T>{
+Disposable subscribe(Consumer<? super T> onNext)
+}
+
+interface ScalarCallable{
+protected void subscribeActual()
+}
+
+interface Subscriber(订阅者){
+void onSubscribe(Subscription s)
+void onNext(T t)
+void onError(Throwable t)
+void onComplete()
+}
+class FlowableJust<T> extends Flowable implements ScalarCallable
+
+
+interface Consumer<T>{
+ void accept(T t)
+}
+
+ interface Subscription {
+
+    public void request(long n);
+
+    public void cancel();
+}
+
+
+@enduml

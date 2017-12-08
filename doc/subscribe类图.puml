@@ -1,0 +1,32 @@
+@startuml
+
+ interface Publisher<T> {
+
+     void subscribe(Subscriber<? super T> s);
+}
+
+ interface Subscriber<T> {
+
+    public void onSubscribe(Subscription s);
+
+    public void onNext(T t);
+
+    public void onError(Throwable t);
+
+    public void onComplete();
+}
+
+ interface Subscription {
+
+    public void request(long n);
+
+    public void cancel();
+}
+interface Consumer<T>{
+ void accept(T t) throws Exception;
+}
+Publisher-->Subscriber
+Subscriber-->Subscription
+Subscription..>Subscriber
+Subscriber ..> Consumer
+@enduml
