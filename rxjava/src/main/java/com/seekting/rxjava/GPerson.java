@@ -22,6 +22,10 @@ public class GPerson {
         System.out.println(gPerson.getClass().getTypeName());
         System.out.println(Cat.class.getTypeName());
         String s = gson.toJson(gPerson);
+//        System.out.println("s=" + s);
+
+        String ss = "xx";
+        s = gson.toJson(ss);
         System.out.println("s=" + s);
 
     }
