@@ -11,6 +11,7 @@ import io.reactivex.functions.Consumer;
 
 public class FlowableCallable {
     public static void main(String args[]) {
+
         Flowable<String> flowable = Flowable.fromCallable(new Callable<String>() {
             @Override
             public String call() throws Exception {

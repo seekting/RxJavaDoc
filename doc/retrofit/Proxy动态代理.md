@@ -1,3 +1,6 @@
+# Proxy动态代理
+首先看看动态代理的用法
+```java
 package com.seekting.retrofit;
 
 import java.lang.reflect.InvocationHandler;
@@ -77,3 +80,16 @@ public class ProxyDemo {
         }
     }
 }
+
+
+```
+输出：
+```Console
+t=1
+t=2
+4
+
+```
+
+从输出可以看出来实现接口的类是MyInvocationHandler，实现方法是invoke，invoke里有一个参数是method，<br>
+通过method调用method.invoke()调用实体对象的相应method方法。
