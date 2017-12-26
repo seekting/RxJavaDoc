@@ -31,5 +31,6 @@
      * [5.10 AsyncSubject](doc/observable/AsyncSubject.md)
      * [5.11 ObservableMap](doc/observable/ObservableMap.md)
      * [5.12 ObservableFlatMap](doc/observable/ObservableFlatMap.md)
-     * [5.11 AsyncSubject](doc/observable/AsyncSubject.md)
+     * [5.13 ObservableConcatMap](doc/observable/ObservableConcatMap.md)
+     * [5.14 ObservableSwitchMap](doc/observable/ObservableSwitchMap.md)
      * [5.12 ObservableFlatMap](doc/observable/ObservableFlatMap.md)
