@@ -38,3 +38,6 @@
      * [5.17 Scan](doc/observable/Scan.md)
      * [5.18 zip](doc/observable/zip.md)
      * [5.19 Combine](doc/observable/Combine.md)
+* [6. 架构](doc/Framework/Action类集.md)
+     * [6.1 Action类集](doc/Framework/Action类集.md)
+     * [6.2 Function类集](doc/Framework/Function类集.md)

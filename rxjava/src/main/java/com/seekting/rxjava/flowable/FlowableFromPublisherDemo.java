@@ -1,11 +1,7 @@
-package com.seekting.rxjava;
+package com.seekting.rxjava.flowable;
 
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;
-
-import java.util.concurrent.Callable;
-import java.util.concurrent.Future;
-import java.util.concurrent.FutureTask;
 
 import io.reactivex.Flowable;
 import io.reactivex.functions.Consumer;

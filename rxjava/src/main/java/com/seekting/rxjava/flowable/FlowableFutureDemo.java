@@ -1,4 +1,4 @@
-package com.seekting.rxjava;
+package com.seekting.rxjava.flowable;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;

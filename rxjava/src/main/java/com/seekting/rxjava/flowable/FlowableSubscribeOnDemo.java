@@ -1,19 +1,20 @@
-package com.seekting.rxjava;
+package com.seekting.rxjava.flowable;
 
 import java.util.concurrent.Callable;
 
 import io.reactivex.Flowable;
 import io.reactivex.functions.Consumer;
-import io.reactivex.internal.operators.flowable.FlowableObserveOn;
+import io.reactivex.internal.operators.flowable.FlowableSubscribeOn;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2017/12/4.
+ * Created by Administrator on 2017/11/30.
  */
 
-public class FlowableObserveOnDemo {
+public class FlowableSubscribeOnDemo {
 
     public static void main(String args[]) throws InterruptedException {
+
         Flowable<String> flowable = Flowable.fromCallable(new Callable<String>() {
             @Override
             public String call() throws Exception {
@@ -22,7 +23,7 @@ public class FlowableObserveOnDemo {
                 return "hello";
             }
         });
-        FlowableObserveOn<String> flowable1 = (FlowableObserveOn<String>) flowable.observeOn(Schedulers.io());
+        FlowableSubscribeOn<String> flowable1 = (FlowableSubscribeOn<String>) flowable.subscribeOn(Schedulers.io());
         Consumer<String> consumer = new Consumer<String>() {
             @Override
             public void accept(String s) throws Exception {
@@ -35,8 +36,6 @@ public class FlowableObserveOnDemo {
         System.out.println(Thread.currentThread());
 
 
-        Thread.sleep(60000);
-
-
+        Thread.sleep(6000);
     }
 }

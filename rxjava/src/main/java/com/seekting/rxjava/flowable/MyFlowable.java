@@ -1,4 +1,4 @@
-package com.seekting.rxjava;
+package com.seekting.rxjava.flowable;
 
 /**
  * Created by Administrator on 2017/11/29.
