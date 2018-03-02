@@ -41,3 +41,5 @@
 * [6. 架构](doc/Framework/Action类集.md)
      * [6.1 Action类集](doc/Framework/Action类集.md)
      * [6.2 Function类集](doc/Framework/Function类集.md)
+     * [6.3 Observer](doc/Framework/Observer.md)
+
