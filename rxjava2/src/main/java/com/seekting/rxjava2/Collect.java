@@ -14,13 +14,13 @@ public class Collect {
     public static void main(String args[]) {
 
         Observable.just(3, 4, 5, 6)
-                .collect(new Func0<List<Integer>>() { //创建数据结构
+                .collect(new Func0<List<Integer>>() { //
 
                     @Override
                     public List<Integer> call() {
                         return new ArrayList<Integer>();
                     }
-                }, new Action2<List<Integer>, Integer>() { //收集器
+                }, new Action2<List<Integer>, Integer>() { //
                     @Override
                     public void call(List<Integer> integers, Integer integer) {
                         integers.add(integer);
